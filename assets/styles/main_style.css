@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('/assets/styles/animations.css');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Setting roots */
+:root {
+    --primary: #01257D;
+    --accent: #00FFFF;
+    --secondary: #f2f2f2;
+    --text_color: #e3e3e9;
+    --alt_text: #fff;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--alt_text);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    background-image: url('../images/hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: #010118e1;
+    background-attachment: fixed;
+}
+
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 500;
+}
+
+a:hover {
+    font-size: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 , .card-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 0px 0px 3px var(--accent);
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+h3 {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+h4{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+
+.text-secondary {
+    color: var(--accent) !important;
+}
+
+
+
+.btn_primary:hover {
+    text-decoration: none;
+}
+
+
+
+.btn_primary {
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: var(--primary);
+    cursor: pointer;
+    border: 1px solid var(--accent);
+    transition: all 0.3s;
+    box-shadow: -0px 1px 3px 3px var(--accent);
+}
+
+.btn_primary:active {
+    color: var(--alt_text);
+    box-shadow: inset 4px 4px 12px var(--accent), inset -4px -4px 12px var(--accent);
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 0px 1px 5px var(--accent);
+}
+
+.navbar-nav .active {
+    color: var(--accent) !important;
+    font-weight: 600;
+}
+
+.blur_bg {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.347);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-text {
+    color: var(--text_color);
+}
+
+.card-img-top {
+    width: 180px !important;
+}
+.card-img-top-1 {
+    width: 200px !important;
+}
