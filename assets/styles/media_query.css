@@ -1,0 +1,43 @@
+/* Media Query for Small Devices (Min-width: 320px, Max-width: 599px) */
+@media (min-width: 320px) and (max-width: 599px) {
+    .about-img {
+        width: 10% !important;
+    }
+
+    h1, .navbar-brand {
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 20px !important;
+        width: 50%;
+        text-wrap: wrap;
+    }
+}
+
+/* Media Query for Medium Devices (Min-width: 600px, Max-width: 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .about-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .about-img img {
+        width: 50% !important;
+    }
+
+    h1, .navbar-brand {
+        font-size: 30px;
+    }
+}
+
+/* Media Query for Large Screens (Min-width: 1025px, Max-width: 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+}
+
+/* Media Query for Extra Large Screens (Min-width: 1441px and up) */
+@media (min-width: 1441px) {
+    
+}

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('/assets/styles/animations.css');
+@import url('/assets/styles/media_query.css');
 
 *,
 *::before,
@@ -22,7 +23,7 @@
 body {
     overflow-x: hidden;
     color: var(--alt_text);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
     background-image: url('../images/hero_bg.jpg');
@@ -58,6 +59,10 @@ h6 , .card-title{
     text-shadow: 0px 0px 3px var(--accent);
 }
 
+h1 {
+    font-size: 35px;
+}
+
 h2 {
     font-size: 30px;
     letter-spacing: 1px;
@@ -83,20 +88,43 @@ h4{
 
 
 .btn_primary:hover {
+    text-decoration: none;  
+}
+
+ul li {
+    list-style-type: none;
+    line-height: 2em;
+}
+
+.navbar-brand:hover {
     text-decoration: none;
 }
 
+.navbar-toggler  {
+    border: none;
+    color: var(--accent);
+}
 
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('/assets/images/menu-icon.png');
+    width: 50px;
+    height: 50px;
+}
 
 .btn_primary {
-    padding: 0.7em 1.7em;
+    padding: 0.5em 1em;
     font-size: 18px;
     border-radius: 0.5em;
     background: var(--primary);
     cursor: pointer;
     border: 1px solid var(--accent);
     transition: all 0.3s;
-    box-shadow: -0px 1px 3px 3px var(--accent);
+    box-shadow: -0px 1px 3px  var(--accent);
 }
 
 .btn_primary:active {
@@ -117,7 +145,6 @@ h4{
 }
 
 .blur_bg {
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.347);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -136,3 +163,62 @@ h4{
 .card-img-top-1 {
     width: 200px !important;
 }
+
+
+.social-menu ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+}
+
+.social-menu ul li .fab{
+    font-size: 25px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+    text-decoration: none;
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+}
+
+input {
+    font-size: 18px;
+}
+
